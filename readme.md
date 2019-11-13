@@ -7,7 +7,7 @@ Since my purpose is to find out which gene is the pathogenic gene, my first step
 However, the heatmap does not work very well. As a result, I need to use some machine learning methods to find out the pathogenic gene. 
 
 From the dataset we can see we have 9 columns of gene expressions which means we have nine dimensions in machine learning. Nine dimension space is invisible in reality so my next step is dimension reductioin. The best way to do dimension reduction is PCA. I choose three PCs and their explained variance ratio are 
-## [9.96502724e-01 1.96036416e-03 9.43274914e-04].
+### [9.96502724e-01 1.96036416e-03 9.43274914e-04].
 
 After PCA, I make a 3D plot to show all the gene expressions. This plot is saved as "pca.png". From this plot we can clearly know there are some outliers. Of course, the next step is to find out who thses outliers are.
 
