@@ -13,9 +13,10 @@ After PCA, I make a 3D plot to show all the gene expressions. This plot is saved
 
 Because we don't have other labeled train dataset, so we can only choose Unsupervised Learning Methods. I choose K-means, DBSCAN, Hierarchical Clustering, BIRCH and GaussianMixture to do the model training. Among these methods, DBSCAN requires huge computational tasks so this is not a good choice. In the other four methods, I set n_clusters = 2 which means all the genes are divided into two clusters. Cluster with large number of genes is labeled with 0 and another is labeled with 1. Now we have got the idea that the small cluster is the pathogenic gene. 
 
-## The last step is to print all the pathogenic genes. Results are as followed:
+The last step is to print all the pathogenic genes. 
+## Results are as followed:
 
-## K-means:
+### K-means:
 13339 : ENSRNOG00000034228
 14887 : ENSRNOG00000046763
 15103 : ENSRNOG00000047319
@@ -29,13 +30,13 @@ Because we don't have other labeled train dataset, so we can only choose Unsuper
 15945 : ENSRNOG00000049620
 16450 : ENSRNOG00000050958
 
-## hierarchical clustering
+### hierarchical clustering
 15335 : ENSRNOG00000047984
 
-## BIRCH
+### BIRCH
 15335 : ENSRNOG00000047984
 
-## GaussianMixture
+### GaussianMixture
 15335 : ENSRNOG00000047984
 
 ## Now we have got the result: ENSRNOG00000047984 is the most likely pathogenic gene.
